@@ -7,15 +7,15 @@ To start the challenge, we spin it up with:
 `docker compose up --build`
 Now we can see a front end where we have the ability to log in.
 
-![[Pasted image 20250407210953.png]]
+![desc](./pic0.png)
 
 If we try to log in, we’re met with an error, forcing us to register before logging in.
 
-![[Pasted image 20250407211345.png]]
+![desc](./pic1.png)
 
 As we are now logged in, we have the ability to create secrets as well as see the secrets we’ve created.
 
-![[Pasted image 20250407211648.png]]
+![desc](./pic2.png)
 
 We observe that the URL is:
 `*/secret/93eee917-2007-4bad-adad-8c12f3f324fb`
@@ -52,7 +52,7 @@ Here we can see that `13371337-1337-1337-1337-133713371337` is the entry where t
 Now, if we go to the UUID `13371337-1337-1337-1337-133713371337`, we are met with the problem: the flag only reveals in 1 year.
 `*/secret/13371337-1337-1337-1337-133713371337`
 
-![[Pasted image 20250407212237.png]]
+![desc](./pic3.png)
 
 Luckily for us, we have the source code:
 
