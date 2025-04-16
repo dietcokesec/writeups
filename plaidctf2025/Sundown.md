@@ -51,7 +51,7 @@ docker compose up --build
 ```
 
 ## Discovery/Initial Evaluation
-What immediately greets us is a front end which has a small app for secrets to be inserted into the database, and unlocked after the timer expires. A brief manual enumeration reveals that there's not much to it. A login, register, and secrets-related pages are all the makes this app.
+What immediately greets us is a front end which has a small app for secrets to be inserted into the database, and unlocked after the timer expires. A brief manual enumeration reveals that there's not much to it. A login, register, and secrets-related pages are all that makes this app.
 
 ![pic0](./pic0.png)
 
@@ -256,7 +256,7 @@ const body = z
 }),
 ...
 ```
-If you look at the above, you can see in comments **1**, **2**, and **3** (these are not in the source code but have been added for clarity) highlight how we are comparing two strings (1, 2) via a **lexicographical comparison** (3).
+If you look at the above, you can see in comments **1**, **2**, and **3** (these are not in the source code but have been added for clarity) highlighting how we are comparing two strings (1, 2) via a **lexicographical comparison** (3).
 
 #### Aside: Lexical String Comparison
 First, let’s learn a bit about Lexical String Comparison — at least what’s relevant here:
