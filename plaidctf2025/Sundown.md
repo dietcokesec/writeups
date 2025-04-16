@@ -53,15 +53,15 @@ docker compose up --build
 ## Discovery/Initial Evaluation
 What immediately greets us is a front end which has a small app for secrets to be inserted into the database, and unlocked after the timer expires. A brief manual enumeration reveals that there's not much to it. A login, register, and secrets-related pages are all the makes this app.
 
-!(pic0)[pic0.png]
+![pic0](pic0.png)
 
 If we try to log in, we’re met with an error, forcing us to register before logging in.
 
-!(pic1)[pic1.png]]
+![pic1](pic1.png)
 
 As we are now logged in, we have the ability to create secrets as well as see the secrets we’ve created.
 
-!(pic2)[pic2.png]
+![pic2](pic2.png)
 
 ### First Observation: URL Structure
 When we first create a secret, we can see that the webpage begins counting down to the time that we inserted into the database. The url has an interesting structure as well:
@@ -102,7 +102,7 @@ Here we can see that `13371337-1337-1337-1337-133713371337` is the entry where t
 
 Recalling our prior finding about public URLs, we go to the UUID `13371337-1337-1337-1337-133713371337`, and we can confirm the problem: the flag reveals in 1 year, and we already confirmed that, even if we somehow compromised the creating account, or spoofed it some way, there does not appear to be a vector to reveal a secret early using the application's functionality, so this must be the hack.
 
-!(pic3)[pic3.png]
+![pic3](pic3.png)
 
 ## Analysis
 Luckily for us, we have the source code, we can see the relevant parts of the file tree here. A scan of the UI code shows that all of the core logic related to timings and timeouts is exclusively driven by the server. The contest designers were kind enough to put all the logic we care about in a single file as well, so it makes analyzing this easy.
