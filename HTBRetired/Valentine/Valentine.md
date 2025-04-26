@@ -152,7 +152,7 @@ ssh -i hype_key_decrypted_unencrypted.key \
 We gain shell access as user `hype`.
 ```
 hype@Valentine:~$ cat user.txt
-bf7eb8c600515cbb9fef7f2fde9a0773
+bf7eb8c600515cb*****************
 ```
 
 ## Privileges Escalation
@@ -178,5 +178,5 @@ cd /root
 ls
 # curl.sh  root.txt
 cat root.txt
-# 59485c3f0d079b8911b150465e749403
+# 59485c3f0d079b8*****************
 ```

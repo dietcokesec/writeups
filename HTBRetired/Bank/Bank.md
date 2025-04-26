@@ -5,6 +5,7 @@ We start by running nmap to see what ports are on on the target machine
 sudo nmap -sV 10.10.10.29  
 ```
 `-sV` enables version detection.
+
 Output:
 ```bash
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-04-15 00:32 CEST
@@ -221,7 +222,7 @@ We can now grab the user flag!
 pwd
 /home/chris
 cat user.txt
-d0006b97a14722fab09ac9a8073ec3ce
+d0006b97a14722f*****************
 ```
 
 ## Privileges Escalation
@@ -285,5 +286,5 @@ root
 Now lets grab the flag and move on!
 ```bash
 cat root/root.txt
-f3d14fff8152570e006e25a410bd9a58
+f3d14fff8152570*****************
 ```

@@ -160,9 +160,9 @@ Now just wait for a few min until root executes it and now check the listener an
 whoami    
 root
 cat /root/root.txt
-07e7b90a784d3f7d0c4ee08c0be62774
+07e7b90a784d3f7*****************
 cat /home/arrexel/user.txt
-817fffdd4cc7a8865c6f07e304a4150d
+817fffdd4cc7a88*****************
 ```
 
 

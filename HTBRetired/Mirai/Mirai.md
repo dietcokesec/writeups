@@ -76,7 +76,7 @@ And we are in!
 ls
 Plex  user.txt
 cat user.txt 
-ff837707441b257a20e32199d7c8838d
+ff837707441b257*****************
 ```
 
 `pi` has full sudo permissions:
@@ -144,5 +144,5 @@ lost+found
 damnit.txt
 /media/usbstick
 lost+found
-3d3e483143ff12ec505d026fa13e020b
+3d3e483143ff12e*****************
 ```

@@ -81,7 +81,7 @@ shelly@Shocker:/home$ cd shelly
 cd shelly
 shelly@Shocker:/home/shelly$ cat user.txt
 cat user.txt
-3933f1d40384dd0e77f809d922dee732
+3933f1d40384dd0*****************
 
 shelly@Shocker:/usr/lib/cgi-bin$ sudo -l
 sudo -l
@@ -101,5 +101,5 @@ cd /root
 ls
 root.txt
 cat root.txt
-e409ad0155c5a6d52f5820d85de513a9
+e409ad0155c5a6d*****************
 ```

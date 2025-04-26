@@ -76,7 +76,7 @@ su djmardov
 # Password: Kab6h+m+bbp2J:HG
 
 cat ~/user.txt
-88780f4a6407365cc883e23959d27e6e
+88780f4a6407365*****************
 ```
 
 ##  Privileges Escalation
@@ -115,7 +115,7 @@ ls
 pass.txt  root.txt
 # cat root.txt
 cat root.txt
-feff7c74c72c03a02efec10c2bab2b52
+feff7c74c72c03a*****************
 ```
 ## What’s the Privilege Escalation?
 
