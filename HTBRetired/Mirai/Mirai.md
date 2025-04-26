@@ -1,3 +1,5 @@
+## Enumeration
+
 We start by running nmap to see what ports are on on the target machine 
 ```bash
 sudo nmap -sV 10.10.10.48
@@ -61,7 +63,9 @@ Output:
 ```
 Finds all the Pi-hole admin files, but no creds. Can’t log in.
 
-With a qquick google we can find the default creds:
+## Observations
+
+With a quick google we can find the default creds:
 ```bash
 ssh pi@10.10.10.48
 password: raspberry
@@ -87,12 +91,13 @@ root@raspberrypi:/media/usbstick# ls
 damnit.txt  lost+found
 ```
 Maybe not :(
+## Privileges Escalation
+
 The original `root.txt` was misplaced. This note explicitly states the existence of a backup on a USB stick, guiding you to investigate the mounted USB drive.
 ```bash
 cat ~/root.txt
 # "I lost my original root.txt! I think I may have a backup on my USB stick..."
 ```
-
 Locating the USB Drive:
 ```bash
 mount | grep /media

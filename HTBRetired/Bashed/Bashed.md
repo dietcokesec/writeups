@@ -1,4 +1,3 @@
-
 ## Enumeration
 
 We start by running nmap to see what ports are on on the target machine 
@@ -84,7 +83,7 @@ by Ben "epi" Risher 🤓                 ver: 2.11.0
 
 ```
 
-## Observations
+## Observations & Exploit
 
 HTB was so kind to give us a webshell at:
 ```bash

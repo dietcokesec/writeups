@@ -4,7 +4,7 @@ We start by running nmap to see what ports are on on the target machine
 ```bash
 sudo nmap -sV 10.10.10.29  
 ```
-We use `-sV` for service detection.
+`-sV` enables version detection.
 Output:
 ```bash
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-04-15 00:32 CEST
@@ -224,7 +224,7 @@ cat user.txt
 d0006b97a14722fab09ac9a8073ec3ce
 ```
 
-## privileges escalation
+## Privileges Escalation
 
 We used the following command to find world-writable files, excluding `/proc`:
 `find / -path /proc -prune -o -type f -perm -o+w 2>/dev/null /proc /etc/passwd`

