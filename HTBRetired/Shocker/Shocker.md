@@ -7,7 +7,7 @@ sudo nmap -sV 10.10.10.68
 `-sV` enables version detection.
 ```bash
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-04-15 21:59 CEST
-Nmap scan report for shocker.htb (10.10.10.56)
+Nmap scan report for 10.10.10.56 (10.10.10.56)
 Host is up (0.10s latency).
 Not shown: 998 closed tcp ports (reset)
 PORT     STATE SERVICE VERSION
@@ -53,7 +53,7 @@ feroxbuster -u http://10.10.10.56/cgi-bin/ -w ./directory-list-2.3-big.txt -r -C
 ```
 Output:
 ```
-200      GET        7l       17w      118c http://shocker.htb/cgi-bin/user.sh
+200      GET        7l       17w      118c http://10.10.10.56/cgi-bin/user.sh
 
 ```
 
